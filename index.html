@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>دار نور البيان لتحفيظ القرآن الكريم</title>
+<meta name="description" content="دار متخصصة في تحفيظ القرآن الكريم وتعليم التجويد للأطفال والكبار بأيدي معلمين مجازين بأعلى الأسانيد." />
+<meta property="og:title" content="دار نور البيان لتحفيظ القرآن الكريم" />
+<meta property="og:description" content="تحفيظ القرآن وتجويد بأيدي معلمين مجازين." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
+        card: 'var(--card)',
+        primary: { DEFAULT: 'var(--primary)', foreground: 'var(--primary-foreground)' },
+        secondary: { DEFAULT: 'var(--secondary)', foreground: 'var(--secondary-foreground)' },
+        muted: { DEFAULT: 'var(--muted)', foreground: 'var(--muted-foreground)' },
+        accent: { DEFAULT: 'var(--accent)', foreground: 'var(--accent-foreground)' },
+        gold: { DEFAULT: 'var(--gold)', foreground: 'var(--gold-foreground)' },
+        border: 'var(--border)',
+      },
+      fontFamily: {
+        display: ['Amiri', 'serif'],
+        sans: ['Tajawal', 'sans-serif'],
+      },
+      boxShadow: {
+        elegant: '0 20px 60px -20px oklch(0.36 0.08 155 / 0.35)',
+        gold: '0 10px 40px -10px oklch(0.74 0.13 80 / 0.45)',
+      },
+    }
+  }
+}
+</script>
+<style>
+:root {
+  --background: oklch(0.985 0.012 95);
+  --foreground: oklch(0.22 0.04 155);
+  --card: oklch(1 0 0);
+  --primary: oklch(0.36 0.08 155);
+  --primary-foreground: oklch(0.98 0.015 85);
+  --secondary: oklch(0.94 0.025 95);
+  --secondary-foreground: oklch(0.3 0.06 155);
+  --muted: oklch(0.95 0.018 95);
+  --muted-foreground: oklch(0.48 0.03 150);
+  --accent: oklch(0.92 0.04 90);
+  --accent-foreground: oklch(0.3 0.06 155);
+  --gold: oklch(0.74 0.13 80);
+  --gold-foreground: oklch(0.22 0.04 155);
+  --border: oklch(0.9 0.02 95);
+}
+body { background: var(--background); color: var(--foreground); font-family: 'Tajawal', sans-serif; }
+h1,h2,h3,.font-display { font-family: 'Amiri', serif; }
+.bg-gradient-hero { background-image: linear-gradient(135deg, oklch(0.28 0.07 155) 0%, oklch(0.36 0.08 155) 50%, oklch(0.22 0.05 155) 100%); }
+.bg-gradient-gold { background-image: linear-gradient(135deg, oklch(0.82 0.14 85) 0%, oklch(0.68 0.14 75) 100%); }
+.text-gold { color: var(--gold); }
+.bg-gold { background-color: var(--gold); }
+.border-gold { border-color: var(--gold); }
+.shadow-elegant { box-shadow: 0 20px 60px -20px oklch(0.36 0.08 155 / 0.35); }
+.shadow-gold { box-shadow: 0 10px 40px -10px oklch(0.74 0.13 80 / 0.45); }
+.btn { display:inline-flex; align-items:center; justify-content:center; gap:.5rem; padding:.6rem 1.25rem; border-radius:.5rem; font-weight:700; transition:opacity .2s; }
+.btn:hover { opacity:.9; }
+.icon { width:1rem; height:1rem; stroke:currentColor; fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+</style>
+</head>
+<body class="min-h-screen">
+
+<!-- Nav -->
+<header class="absolute top-0 inset-x-0 z-20">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+    <div class="flex items-center gap-2 text-[color:var(--primary-foreground)]">
+      <div class="w-10 h-10 rounded-full bg-gradient-gold flex items-center justify-center shadow-gold">
+        <svg class="icon w-5 h-5 text-[color:var(--primary)]" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      </div>
+      <span class="font-display text-xl font-bold">نور البيان</span>
+    </div>
+    <nav class="hidden md:flex items-center gap-8 text-white/90 text-sm">
+      <a href="#about" class="hover:text-gold transition">عن الدار</a>
+      <a href="#programs" class="hover:text-gold transition">البرامج</a>
+      <a href="#features" class="hover:text-gold transition">المميزات</a>
+      <a href="#contact" class="hover:text-gold transition">تواصل</a>
+    </nav>
+    <a href="#contact" class="btn bg-gradient-gold text-[color:var(--primary)] shadow-gold">سجّل الآن</a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="relative min-h-screen flex items-center bg-gradient-hero overflow-hidden">
+  <div class="absolute top-1/4 -right-32 w-[500px] h-[500px] rounded-full opacity-20" style="background:var(--gold);filter:blur(120px)"></div>
+  <div class="absolute bottom-0 -left-32 w-[600px] h-[600px] rounded-full opacity-40" style="background:var(--primary);filter:blur(120px)"></div>
+  <div class="absolute inset-0 opacity-[0.06]" style="background-image:url('assets/pattern.jpg');background-size:320px"></div>
+  <div class="absolute inset-0" style="background-image:linear-gradient(to right, rgba(255,255,255,.04) 1px, transparent 1px);background-size:80px 80px"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 w-full pt-32 pb-20 grid lg:grid-cols-12 gap-10 items-center">
+    <div class="lg:col-span-7 text-white space-y-8">
+      <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/5 border border-[color:var(--gold)]/30 backdrop-blur-sm text-sm">
+        <span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span>
+        <span class="text-white/90">التسجيل مفتوح للفصل الجديد</span>
+      </div>
+      <h1 class="font-display text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.05] tracking-tight">
+        رحلة <span class="text-gold italic">القرآن</span><br>تبدأ من هنا
+      </h1>
+      <p class="text-lg md:text-xl text-white/75 leading-relaxed max-w-2xl">
+        في دار نور البيان نُرافقك خطوة بخطوة لحفظ كتاب الله وإتقان تلاوته، بمنهجية حديثة ومعلمين مجازين بأعلى الأسانيد.
+      </p>
+      <div class="flex flex-wrap items-center gap-4">
+        <a href="#contact" class="btn bg-gradient-gold text-[color:var(--primary)] shadow-gold text-base px-8 h-14 rounded-full">ابدأ رحلتك الآن</a>
+        <a href="#programs" class="btn border border-white/20 bg-white/5 text-white hover:bg-white/10 text-base h-14 rounded-full px-8 backdrop-blur-sm">تعرّف على البرامج</a>
+      </div>
+      <div class="grid grid-cols-3 gap-6 pt-8 max-w-2xl border-t border-white/10">
+        <div class="pt-6"><div class="font-display text-3xl font-bold text-gold">+1200</div><div class="text-xs text-white/60 mt-1">طالب وطالبة</div></div>
+        <div class="pt-6 border-x border-white/10 px-6"><div class="font-display text-3xl font-bold text-gold">+350</div><div class="text-xs text-white/60 mt-1">حافظ متخرج</div></div>
+        <div class="pt-6"><div class="font-display text-3xl font-bold text-gold">15</div><div class="text-xs text-white/60 mt-1">سنة من العطاء</div></div>
+      </div>
+    </div>
+
+    <div class="lg:col-span-5 relative h-[520px] hidden lg:block">
+      <div class="absolute inset-8 rounded-full border border-[color:var(--gold)]/30"></div>
+      <div class="absolute inset-16 rounded-full border border-[color:var(--gold)]/20"></div>
+      <div class="absolute inset-0 flex items-center justify-center">
+        <svg viewBox="0 0 500 500" class="w-full h-full" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="مصحف مع زخارف وهالة ذهبية">
+          <defs>
+            <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="oklch(0.82 0.14 85)" stop-opacity="0.55"/>
+              <stop offset="60%" stop-color="oklch(0.74 0.13 80)" stop-opacity="0.12"/>
+              <stop offset="100%" stop-color="oklch(0.36 0.08 155)" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="oklch(0.88 0.14 88)"/>
+              <stop offset="100%" stop-color="oklch(0.62 0.13 70)"/>
+            </linearGradient>
+            <linearGradient id="goldSoft" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="oklch(0.92 0.12 88)"/>
+              <stop offset="100%" stop-color="oklch(0.74 0.13 80)"/>
+            </linearGradient>
+            <linearGradient id="cover" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="oklch(0.32 0.08 155)"/>
+              <stop offset="100%" stop-color="oklch(0.20 0.06 155)"/>
+            </linearGradient>
+            <linearGradient id="pages" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="oklch(0.98 0.015 85)"/>
+              <stop offset="100%" stop-color="oklch(0.90 0.03 85)"/>
+            </linearGradient>
+            <linearGradient id="rehl" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="oklch(0.42 0.07 60)"/>
+              <stop offset="100%" stop-color="oklch(0.26 0.05 50)"/>
+            </linearGradient>
+          </defs>
+          <circle cx="250" cy="250" r="230" fill="url(#halo)">
+            <animate attributeName="r" values="220;245;220" dur="6s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.7;1;0.7" dur="6s" repeatCount="indefinite"/>
+          </circle>
+          <g style="transform-origin:250px 250px">
+            <animateTransform attributeName="transform" type="rotate" from="0 250 250" to="360 250 250" dur="60s" repeatCount="indefinite"/>
+            <circle cx="250" cy="250" r="210" fill="none" stroke="url(#gold)" stroke-width="1" stroke-opacity="0.5" stroke-dasharray="2 8"/>
+            <g id="outerDots"></g>
+          </g>
+          <g style="transform-origin:250px 250px">
+            <animateTransform attributeName="transform" type="rotate" from="360 250 250" to="0 250 250" dur="45s" repeatCount="indefinite"/>
+            <circle cx="250" cy="250" r="180" fill="none" stroke="url(#goldSoft)" stroke-width="0.8" stroke-opacity="0.4"/>
+            <g id="innerStars"></g>
+          </g>
+          <g opacity="0.5" style="transform-origin:250px 250px">
+            <animateTransform attributeName="transform" type="rotate" from="0 250 250" to="360 250 250" dur="80s" repeatCount="indefinite"/>
+            <g id="rays"></g>
+          </g>
+          <g>
+            <animateTransform attributeName="transform" type="translate" values="0 0; 0 -8; 0 0" dur="5s" repeatCount="indefinite"/>
+            <g>
+              <path d="M130 380 L370 380 L340 430 L160 430 Z" fill="url(#rehl)"/>
+              <path d="M150 430 L350 430 L340 445 L160 445 Z" fill="oklch(0.22 0.04 50)"/>
+              <line x1="180" y1="395" x2="320" y2="395" stroke="url(#gold)" stroke-width="1" opacity="0.6"/>
+              <line x1="170" y1="410" x2="330" y2="410" stroke="url(#gold)" stroke-width="1" opacity="0.4"/>
+            </g>
+            <ellipse cx="250" cy="378" rx="170" ry="8" fill="oklch(0.1 0.02 155)" opacity="0.35"/>
+            <g transform="translate(250 280)">
+              <path d="M-150 -80 Q-150 -90 -140 -90 L0 -90 L0 100 L-140 100 Q-150 100 -150 90 Z" fill="url(#cover)"/>
+              <path d="M-145 -85 L-5 -85 L-5 95 L-145 95 Z" fill="url(#pages)"/>
+              <g id="linesLeft"></g>
+              <rect x="-138" y="-80" width="128" height="170" fill="none" stroke="url(#gold)" stroke-width="0.8" opacity="0.7"/>
+              <path d="M150 -80 Q150 -90 140 -90 L0 -90 L0 100 L140 100 Q150 100 150 90 Z" fill="url(#cover)"/>
+              <path d="M145 -85 L5 -85 L5 95 L145 95 Z" fill="url(#pages)"/>
+              <g id="linesRight"></g>
+              <rect x="10" y="-80" width="128" height="170" fill="none" stroke="url(#gold)" stroke-width="0.8" opacity="0.7"/>
+              <line x1="0" y1="-90" x2="0" y2="100" stroke="oklch(0.15 0.04 155)" stroke-width="2"/>
+              <g transform="translate(0 -78)">
+                <rect x="-140" y="0" width="280" height="14" fill="url(#cover)"/>
+                <rect x="-138" y="2" width="276" height="10" fill="none" stroke="url(#gold)" stroke-width="0.6"/>
+                <circle cx="0" cy="7" r="3" fill="url(#gold)"/>
+              </g>
+            </g>
+            <ellipse cx="250" cy="200" rx="160" ry="20" fill="url(#goldSoft)" opacity="0.18"/>
+          </g>
+          <g id="sparkles"></g>
+        </svg>
+      </div>
+
+      <div class="absolute -bottom-4 -right-4 bg-white/95 backdrop-blur-md text-[color:var(--foreground)] p-5 rounded-2xl shadow-elegant border border-[color:var(--gold)]/30 max-w-[240px]">
+        <div class="text-xs text-gold font-bold mb-2 tracking-wider">آية اليوم</div>
+        <p class="font-display text-base leading-relaxed">إِنَّا نَحْنُ نَزَّلْنَا الذِّكْرَ وَإِنَّا لَهُ لَحَافِظُونَ</p>
+      </div>
+      <div class="absolute -top-2 -left-2 bg-gradient-gold p-4 rounded-2xl shadow-gold flex items-center gap-3">
+        <svg class="icon w-6 h-6 text-[color:var(--primary)]" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+        <div class="text-[color:var(--primary)]">
+          <div class="text-[10px] font-bold uppercase tracking-wider opacity-70">معتمدون</div>
+          <div class="text-sm font-bold leading-tight">إجازات بالسند</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="absolute bottom-0 inset-x-0 h-24" style="background:linear-gradient(to bottom, transparent, var(--primary))"></div>
+</section>
+
+<!-- Stats -->
+<section class="bg-[color:var(--primary)] text-white py-12 border-y border-[color:var(--gold)]/20">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <div><div class="font-display text-4xl md:text-5xl font-bold text-gold">+1200</div><div class="mt-2 text-sm text-white/80">طالب وطالبة</div></div>
+    <div><div class="font-display text-4xl md:text-5xl font-bold text-gold">+45</div><div class="mt-2 text-sm text-white/80">معلم ومعلمة</div></div>
+    <div><div class="font-display text-4xl md:text-5xl font-bold text-gold">+350</div><div class="mt-2 text-sm text-white/80">حافظ للقرآن</div></div>
+    <div><div class="font-display text-4xl md:text-5xl font-bold text-gold">15</div><div class="mt-2 text-sm text-white/80">عامًا من العطاء</div></div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-24">
+  <div class="max-w-5xl mx-auto px-6 text-center space-y-6">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[color:var(--accent)] text-[color:var(--accent-foreground)] text-sm">
+      <svg class="icon w-4 h-4 text-gold" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg> عن دارنا
+    </div>
+    <h2 class="font-display text-4xl md:text-5xl font-bold text-[color:var(--primary)]">رسالتنا أن نُخرج جيلًا قرآنيًا</h2>
+    <p class="text-lg text-[color:var(--muted-foreground)] leading-loose">
+      انطلقت دار نور البيان منذ خمسة عشر عامًا برسالة واضحة: تخريج حَفَظَة للقرآن الكريم، متقنين لتلاوته، متخلّقين بأخلاقه. نقدّم بيئة تعليمية راقية، بمناهج مدروسة، وحلقات مصغّرة، وتقييم مستمر، ليصل طالبنا إلى أعلى مراتب الإتقان بإذن الله.
+    </p>
+  </div>
+</section>
+
+<!-- Features -->
+<section id="features" class="py-24 bg-[color:var(--secondary)]/50">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16 space-y-4">
+      <h2 class="font-display text-4xl md:text-5xl font-bold text-[color:var(--primary)]">لماذا نور البيان؟</h2>
+      <p class="text-[color:var(--muted-foreground)] text-lg">منهجية متكاملة تجمع بين الإتقان والتربية</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" id="featureCards"></div>
+  </div>
+</section>
+
+<!-- Programs -->
+<section id="programs" class="py-24 relative overflow-hidden">
+  <div class="absolute inset-0 opacity-[0.04]" style="background-image:url('assets/pattern.jpg');background-size:300px"></div>
+  <div class="relative max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16 space-y-4">
+      <h2 class="font-display text-4xl md:text-5xl font-bold text-[color:var(--primary)]">برامجنا التعليمية</h2>
+      <p class="text-[color:var(--muted-foreground)] text-lg">برامج مصمّمة لكل مرحلة عمرية</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8" id="programCards"></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="contact" class="py-24 bg-gradient-hero relative overflow-hidden">
+  <div class="absolute inset-0 opacity-15" style="background-image:url('assets/pattern.jpg');background-size:400px"></div>
+  <div class="relative max-w-4xl mx-auto px-6 text-center text-white space-y-8">
+    <h2 class="font-display text-4xl md:text-5xl font-bold">ابدأ رحلتك مع كتاب الله اليوم</h2>
+    <p class="text-lg text-white/85 max-w-2xl mx-auto">انضم إلى آلاف الطلاب الذين اختاروا دار نور البيان ليكونوا من أهل القرآن — أهل الله وخاصته.</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="tel:920000000" class="btn bg-gradient-gold text-[color:var(--primary)] shadow-gold px-8">احجز مقعدك مجانًا</a>
+    </div>
+    <div class="grid sm:grid-cols-3 gap-6 pt-12 text-sm">
+      <div class="flex items-center justify-center gap-2"><svg class="icon text-gold" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg> 920000000</div>
+      <div class="flex items-center justify-center gap-2"><svg class="icon text-gold" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> info@noor-albayan.com</div>
+      <div class="flex items-center justify-center gap-2"><svg class="icon text-gold" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> الرياض - المملكة العربية السعودية</div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="relative bg-[color:var(--primary)] text-white overflow-hidden">
+  <div class="absolute inset-0 opacity-[0.05]" style="background-image:url('assets/pattern.jpg');background-size:320px"></div>
+  <div class="absolute top-0 inset-x-0 h-px" style="background:linear-gradient(to right, transparent, oklch(0.74 0.13 80 / 0.6), transparent)"></div>
+  <div class="relative max-w-7xl mx-auto px-6 pt-20 pb-8">
+    <div class="grid md:grid-cols-12 gap-12 pb-16 border-b border-white/10">
+      <div class="md:col-span-5 space-y-5">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-gold flex items-center justify-center shadow-gold">
+            <svg class="icon w-6 h-6 text-[color:var(--primary)]" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <div>
+            <div class="font-display text-2xl font-bold">نور البيان</div>
+            <div class="text-xs text-white/60">دار تحفيظ القرآن الكريم</div>
+          </div>
+        </div>
+        <p class="text-white/70 leading-relaxed max-w-md text-sm">رسالتنا أن نُخرّج جيلًا قرآنيًا متقنًا للتلاوة، متخلّقًا بأخلاق القرآن، يحمل النور إلى أمته.</p>
+        <div class="flex items-center gap-3 pt-2">
+          <a href="#" class="w-10 h-10 rounded-full border border-white/15 hover:border-gold hover:bg-[color:var(--gold)]/10 transition flex items-center justify-center text-xs">ت</a>
+          <a href="#" class="w-10 h-10 rounded-full border border-white/15 hover:border-gold hover:bg-[color:var(--gold)]/10 transition flex items-center justify-center text-xs">إ</a>
+          <a href="#" class="w-10 h-10 rounded-full border border-white/15 hover:border-gold hover:bg-[color:var(--gold)]/10 transition flex items-center justify-center text-xs">ي</a>
+          <a href="#" class="w-10 h-10 rounded-full border border-white/15 hover:border-gold hover:bg-[color:var(--gold)]/10 transition flex items-center justify-center text-xs">ت</a>
+        </div>
+      </div>
+      <div class="md:col-span-2 space-y-4">
+        <h4 class="font-display text-gold text-sm font-bold tracking-wider">الدار</h4>
+        <ul class="space-y-2.5 text-sm text-white/70">
+          <li><a href="#about" class="hover:text-gold transition">عن الدار</a></li>
+          <li><a href="#programs" class="hover:text-gold transition">البرامج</a></li>
+          <li><a href="#features" class="hover:text-gold transition">المميزات</a></li>
+          <li><a href="#" class="hover:text-gold transition">المعلمون</a></li>
+        </ul>
+      </div>
+      <div class="md:col-span-2 space-y-4">
+        <h4 class="font-display text-gold text-sm font-bold tracking-wider">روابط</h4>
+        <ul class="space-y-2.5 text-sm text-white/70">
+          <li><a href="#" class="hover:text-gold transition">التسجيل</a></li>
+          <li><a href="#" class="hover:text-gold transition">المدوّنة</a></li>
+          <li><a href="#" class="hover:text-gold transition">المسابقات</a></li>
+          <li><a href="#" class="hover:text-gold transition">تبرّع</a></li>
+        </ul>
+      </div>
+      <div class="md:col-span-3 space-y-4">
+        <h4 class="font-display text-gold text-sm font-bold tracking-wider">النشرة الأسبوعية</h4>
+        <p class="text-sm text-white/70">تذكير أسبوعي بآيات ودروس مختارة</p>
+        <form class="flex items-center gap-2 bg-white/5 border border-white/15 rounded-full p-1.5 focus-within:border-[color:var(--gold)]/50 transition" onsubmit="event.preventDefault()">
+          <input type="email" placeholder="بريدك الإلكتروني" class="flex-1 bg-transparent px-3 text-sm outline-none placeholder:text-white/40"/>
+          <button type="submit" class="px-4 py-2 rounded-full bg-gradient-gold text-[color:var(--primary)] text-xs font-bold whitespace-nowrap">اشترك</button>
+        </form>
+        <div class="flex items-center gap-2 text-xs text-white/60 pt-2">
+          <svg class="icon w-3.5 h-3.5 text-gold" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>الرياض، المملكة العربية السعودية</span>
+        </div>
+      </div>
+    </div>
+    <div class="pt-8 flex flex-wrap items-center justify-between gap-4 text-xs text-white/50">
+      <div>© 2026 دار نور البيان لتحفيظ القرآن الكريم — جميع الحقوق محفوظة</div>
+      <div class="flex items-center gap-6">
+        <a href="#" class="hover:text-gold transition">سياسة الخصوصية</a>
+        <a href="#" class="hover:text-gold transition">الشروط والأحكام</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Build SVG repeated elements
+const svgNS = 'http://www.w3.org/2000/svg';
+const outerDots = document.getElementById('outerDots');
+for (let i=0;i<16;i++){const a=i*Math.PI*2/16;const x=250+Math.cos(a)*210;const y=250+Math.sin(a)*210;const c=document.createElementNS(svgNS,'circle');c.setAttribute('cx',x);c.setAttribute('cy',y);c.setAttribute('r','2.5');c.setAttribute('fill','url(#gold)');outerDots.appendChild(c);}
+const innerStars=document.getElementById('innerStars');
+for (let i=0;i<8;i++){const a=i*Math.PI*2/8;const x=250+Math.cos(a)*180;const y=250+Math.sin(a)*180;const g=document.createElementNS(svgNS,'g');g.setAttribute('transform',`translate(${x} ${y}) rotate(${i*360/8})`);const p=document.createElementNS(svgNS,'path');p.setAttribute('d','M0,-6 L1.5,-1.5 L6,0 L1.5,1.5 L0,6 L-1.5,1.5 L-6,0 L-1.5,-1.5 Z');p.setAttribute('fill','url(#gold)');g.appendChild(p);innerStars.appendChild(g);}
+const rays=document.getElementById('rays');
+for (let i=0;i<12;i++){const r=document.createElementNS(svgNS,'rect');r.setAttribute('x','249');r.setAttribute('y','60');r.setAttribute('width','2');r.setAttribute('height','120');r.setAttribute('fill','url(#goldSoft)');r.setAttribute('opacity','0.35');r.setAttribute('transform',`rotate(${i*360/12} 250 250)`);rays.appendChild(r);}
+function lines(id,x1,x2,dash){const g=document.getElementById(id);for(let i=0;i<9;i++){const l=document.createElementNS(svgNS,'line');l.setAttribute('x1',x1);l.setAttribute('y1',-70+i*18);l.setAttribute('x2',x2);l.setAttribute('y2',-70+i*18);l.setAttribute('stroke','oklch(0.36 0.08 155)');l.setAttribute('stroke-width','1.2');l.setAttribute('opacity','0.55');l.setAttribute('stroke-dasharray',dash);g.appendChild(l);}}
+lines('linesLeft',-130,-20,'3 2 5 3 4 2');
+lines('linesRight',20,130,'4 2 3 3 5 2');
+const sparkles=document.getElementById('sparkles');
+[{x:110,y:130,d:'3s',delay:'0s'},{x:400,y:110,d:'4s',delay:'1s'},{x:80,y:280,d:'3.5s',delay:'0.5s'},{x:420,y:320,d:'4.5s',delay:'1.5s'},{x:250,y:70,d:'3.2s',delay:'0.8s'}].forEach(s=>{
+  const g=document.createElementNS(svgNS,'g');g.setAttribute('transform',`translate(${s.x} ${s.y})`);
+  const p=document.createElementNS(svgNS,'path');p.setAttribute('d','M0,-8 L1.8,-1.8 L8,0 L1.8,1.8 L0,8 L-1.8,1.8 L-8,0 L-1.8,-1.8 Z');p.setAttribute('fill','url(#gold)');
+  const a1=document.createElementNS(svgNS,'animate');a1.setAttribute('attributeName','opacity');a1.setAttribute('values','0;1;0');a1.setAttribute('dur',s.d);a1.setAttribute('begin',s.delay);a1.setAttribute('repeatCount','indefinite');p.appendChild(a1);
+  const a2=document.createElementNS(svgNS,'animateTransform');a2.setAttribute('attributeName','transform');a2.setAttribute('type','scale');a2.setAttribute('values','0.4;1.2;0.4');a2.setAttribute('dur',s.d);a2.setAttribute('begin',s.delay);a2.setAttribute('repeatCount','indefinite');a2.setAttribute('additive','sum');p.appendChild(a2);
+  g.appendChild(p);sparkles.appendChild(g);
+});
+
+// Features
+const features=[
+  {icon:'<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>',title:'تحفيظ متقن',desc:'خطة فردية لكل طالب مع متابعة يومية للحفظ والمراجعة'},
+  {icon:'<path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>',title:'إجازات بالسند',desc:'إجازات في القراءات بسند متصل إلى النبي ﷺ'},
+  {icon:'<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>',title:'تربية إيمانية',desc:'نهتم بالأخلاق والسلوك جنبًا إلى جنب مع الحفظ'},
+  {icon:'<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',title:'حلقات مصغّرة',desc:'حلقات صغيرة العدد لضمان جودة التلقي والتصحيح'},
+];
+document.getElementById('featureCards').innerHTML=features.map(f=>`
+  <div class="group bg-white p-8 rounded-2xl border border-[color:var(--border)] hover:border-[color:var(--gold)]/50 hover:shadow-elegant transition-all duration-300">
+    <div class="w-14 h-14 rounded-xl bg-gradient-gold flex items-center justify-center mb-5 shadow-gold group-hover:scale-110 transition">
+      <svg class="icon w-7 h-7 text-[color:var(--primary)]" viewBox="0 0 24 24">${f.icon}</svg>
+    </div>
+    <h3 class="font-display text-xl font-bold mb-2 text-[color:var(--primary)]">${f.title}</h3>
+    <p class="text-[color:var(--muted-foreground)] text-sm leading-relaxed">${f.desc}</p>
+  </div>`).join('');
+
+const programs=[
+  {title:'برنامج النشء',age:'من 5 إلى 12 سنة',points:['تحفيظ بقاعدة نورانية','أحكام التجويد المبسطة','مسابقات وحوافز أسبوعية']},
+  {title:'برنامج الشباب',age:'من 13 إلى 25 سنة',points:['خطة ختم القرآن في عامين','متن الجزرية والتجويد','حلقات مراجعة مكثفة']},
+  {title:'برنامج الكبار',age:'للرجال والنساء',points:['مرونة في المواعيد','تصحيح التلاوة فرديًا','حلقات أونلاين وحضوري']},
+];
+document.getElementById('programCards').innerHTML=programs.map((p,i)=>{
+  const fea=i===1;
+  return `<div class="relative p-8 rounded-3xl border-2 transition ${fea?'bg-gradient-hero text-white border-[color:var(--gold)] shadow-elegant scale-105':'bg-white border-[color:var(--border)] hover:border-[color:var(--primary)]/40'}">
+    ${fea?'<div class="absolute -top-3 right-8 px-3 py-1 rounded-full bg-gradient-gold text-[color:var(--primary)] text-xs font-bold">الأكثر إقبالًا</div>':''}
+    <h3 class="font-display text-2xl font-bold mb-1 ${fea?'text-gold':'text-[color:var(--primary)]'}">${p.title}</h3>
+    <p class="text-sm mb-6 ${fea?'text-white/80':'text-[color:var(--muted-foreground)]'}">${p.age}</p>
+    <ul class="space-y-3 mb-8">
+      ${p.points.map(pt=>`<li class="flex items-start gap-2 text-sm"><svg class="icon w-5 h-5 mt-0.5 flex-shrink-0 ${fea?'text-gold':'text-[color:var(--primary)]'}" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="9 12 12 15 16 10"/></svg><span>${pt}</span></li>`).join('')}
+    </ul>
+    <a href="#contact" class="btn w-full ${fea?'bg-gradient-gold text-[color:var(--primary)]':'bg-[color:var(--primary)] text-white'}">سجّل في البرنامج</a>
+  </div>`;
+}).join('');
+</script>
+</body>
+</html>
